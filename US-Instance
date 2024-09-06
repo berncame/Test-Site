@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./testsite.css">
+    <title>Test Wootric Site</title>
+</head>
+<body>
+   
+    <head>
+        
+        <!-- begin Wootric code -->
+<script type="text/javascript">
+  window.wootric_survey_immediately = true;
+  wootric_no_surveyed_cookie = true;
+  window.wootricSettings = {
+    email: 'customer@example.com', // TODO: Required to uniquely identify a user. Email is recommended but this can be any unique identifier.
+    // external_id: 'abc123', // TODO: Reference field for external integrations only. Send it along with email. OPTIONAL
+    created_at: 1234567890, // TODO: The current logged in user's sign-up date as a 10 digit Unix timestamp in seconds. OPTIONAL
+    account_token: 'NPS-b0d58977' 
+  };
+</script>
+<script type="text/javascript" src="https://cdn.wootric.com/wootric-sdk.js"></script>
+<script type="text/javascript">
+
+  window.wootric('run');
+
+  //end Wootric code
+</script>
+       
+       </head>
+
+
+<h1>US Instance</h1>
+<h2>This is a testing page for US surveys</h2>
+    
+</body>
+</html>
