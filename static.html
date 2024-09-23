@@ -43,41 +43,77 @@
 
 
 
-<h1>US Instance</h1>
-<h2>This is a testing page for US surveys</h2>
 
 
-<br><br>
+
+
+    
 <!--Begin Static Wootric Survey-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><form action="https://app.wootric.com/responses" method="GET" id="wootric-form--bc669b" target="wootric-form__target" class="wootric-form">
-<input type="hidden" name="account_token" value="NPS-AU-fa3741da">
+<input type="hidden" name="account_token" value="NPS-9c84d50d">
 <input type="hidden" name="_method" value="POST">
 <input type="hidden" name="response[origin_url]" value="static">
 <input type="hidden" name="end_user[email]" value="{{ email }}">
 <input type="hidden" name="survey[unique_link]" value="{{ unique_link }}">
 
+
 <fieldset class="wootric-form__component--response-score" id="wootric-form__component--0965da">
-<legend>Was this page helpful?</legend>
+<legend>How was your recent support experience? Rate your level of satisfaction.</legend>
 <div class="wootric-form__scores">
-<span class="wootric-form__score"><label for="wootric-form__score--b3877f"><input id="wootric-form__score--b3877f" type="radio" value="1" name="response[score]"><span class="wootric-form__score__text" data-index="1">⭐</span></label></span><span class="wootric-form__score"><label for="wootric-form__score--1de5aa"><input id="wootric-form__score--1de5aa" type="radio" value="2" name="response[score]"><span class="wootric-form__score__text" data-index="2">⭐</span></label></span><span class="wootric-form__score"><label for="wootric-form__score--dac392"><input id="wootric-form__score--dac392" type="radio" value="3" name="response[score]"><span class="wootric-form__score__text" data-index="3">⭐</span></label></span><span class="wootric-form__score"><label for="wootric-form__score--8db9a8"><input id="wootric-form__score--8db9a8" type="radio" value="4" name="response[score]"><span class="wootric-form__score__text" data-index="4">⭐</span></label></span><span class="wootric-form__score"><label for="wootric-form__score--84ca5d"><input id="wootric-form__score--84ca5d" type="radio" value="5" name="response[score]"><span class="wootric-form__score__text" data-index="5">⭐</span>
+<span class="wootric-form__anchor wootric-form__anchor--left">Not at all satisfied</span>
+<span class="wootric-form__score">
+<label for="wootric-form__score--b3877f">
+<input id="wootric-form__score--b3877f" type="radio" value="0" name="response[score]">
+<span class="wootric-form__score__text" data-index="1">1</span></label></span>
+<span class="wootric-form__score"><label for="wootric-form__score--1de5aa">
+  <input id="wootric-form__score--1de5aa" type="radio" value="1" name="response[score]">
+  <span class="wootric-form__score__text" data-index="2">2</span></label></span>
+  <span class="wootric-form__score"><label for="wootric-form__score--dac392">
+    <input id="wootric-form__score--dac392" type="radio" value="2" name="response[score]">
+    <span class="wootric-form__score__text" data-index="3">3</span></label></span>
+    <span class="wootric-form__score"><label for="wootric-form__score--8db9a8">
+      <input id="wootric-form__score--8db9a8" type="radio" value="4" name="response[score]">
+      <span class="wootric-form__score__text" data-index="4">4</span></label></span>
+      <span class="wootric-form__score"><label for="wootric-form__score--84ca5d">
+        <input id="wootric-form__score--84ca5d" type="radio" value="5" name="response[score]">
+        <span class="wootric-form__score__text" data-index="5">5</span></label></span>
+        
+        <span class="wootric-form__anchor wootric-form__anchor--right">Extremely Satisfied</span>
 </div>
 </fieldset>
-<div class = "wootric-field-flex">
 <fieldset class="wootric-form__component--response-text">
-<textarea name="response[text]" placeholder="Tell us more..."></textarea>
+<legend>How could we have done better to improve your support experience?</legend>
+<textarea name="response[text]" placeholder=""></textarea>
 </fieldset>
-<div class="wootric-form__component--submit-button"><button type="button" class="wootric-form__submit">Send</button>
-</form><iframe id="wootric-form__target" name="wootric-form__target" onload="document.getElementById('wootric-form--bc669b').reset()"></iframe></div></div>
 
-<style>.wootric-form {
+<fieldset class="wootric-form__component--response-text">
+<legend>Was your issue resolved?</legend>
+
+<span class="wootric-form__score">
+<label for="wootric-form__score--c3988g"></label>
+<input id="wootric-form__score--c3988g" type="radio" value="Yes" name="response[score]">
+<span class="wootric-form__score__text" data-index="Yes">Yes</span></label></span>
+
+<span class="wootric-form__score">
+<label for="wootric-form__score--d4099h"></label>
+<input id="wootric-form__score--d4099h" type="radio" value="No" name="response[score]">
+<span class="wootric-form__score__text" data-index="No">No</span></label></span>
+
+
+</fieldset>
+
+<div class="wootric-form__component--submit-button"><button type="button" class="wootric-form__submit">Submit</button></div>
+</form><iframe id="wootric-form__target" name="wootric-form__target" onload="document.getElementById('wootric-form--bc669b').reset()"></iframe><style>.wootric-form {
   font-family: "Helvetica Neue", Helvetica-Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  margin: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-top: 5px solid rgba(0, 0, 0, 0.16);
+  font-size: 16px;
+  margin: 20px;
+  padding: 20px;
 }
 
-
 .wootric-form--mobile .wootric-form__scores .wootric-form__anchor {
-  display: inline-block;
+  display: block;
   margin: 10px 0;
   width: 100%;
 }
@@ -110,7 +146,7 @@
 }
 
 .wootric-form__component--submit-button button {
-  width: 150px;
+  width: 300px;
 }
 
 .wootric-form__component--text {
@@ -118,7 +154,7 @@
 }
 
 .wootric-form__component--text p {
-  font-size: 1px;
+  font-size: 18px;
 }
 
 .wootric-form__component--response-score legend,
@@ -137,10 +173,18 @@
   font-style: italic;
 }
 
+.wootric-form__anchor--left {
+  margin-right: 20px;
+}
+
+.wootric-form__anchor--right {
+  margin-left: 10px;
+}
+
 .wootric-form__score {
   align-items: center;
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-right: 10px;
 }
@@ -154,18 +198,10 @@
   border-radius: 999px;
   cursor: pointer;
   display: inline-flex;
-  flex-direction: row;
   height: 40px;
   justify-content: center;
   width: 40px;
 }
-
-.wootric-field-flex {
-  display:flex;
-  justify-content: center;
-
-}
-
 
 .wootric-form__score__text--checked {
   background: #2d91d7;
@@ -178,7 +214,7 @@
   border: 1px solid lightgray;
   border-radius: 5px;
   padding: 5px;
-  width: 60%;
+  width: 80%;
 }
 
 .wootric-form textarea {
@@ -186,19 +222,18 @@
   color: rgba(0,0,0,0.5);
   background-color: rgba(0,0,0,0.02);
   border: 1px solid rgba(0,0,0,0.1);
-  width:60%;
 }
 
 .wootric-form__submit,
 .wootric-form button[type="submit"] {
   color: white;
-  background: #b6bbc0;
+  background: #007bff;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 20px;
   padding: 10px 20px;
-  width: 60%;
+  width: 80%;
 }
 
 .wootric-form__submit:disabled,
@@ -210,7 +245,7 @@
   border-radius: 5px;
   border: none;
   margin-bottom: 20px;
-  padding: 0px 0;
+  padding: 20px 0;
 }
 
 .wootric-form label {
@@ -356,6 +391,11 @@
 })();
 </script>
 <!--End Static Wootric Survey-->
+
+
+
+
+<br><br>
 
 
     
